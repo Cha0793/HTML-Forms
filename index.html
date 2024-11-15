@@ -32,9 +32,15 @@
       function displayResult () {
           const firstName = document.getElementById('fname').value;
           const lastName = document.getElementById('lname').value;
+          const firstName = document.getElementById('midname').value;
+          const lastName = document.getElementById('age').value;
+          const lastName = document.getElementById('section').value;
 
       document.getElementById("firstNameDisplay").innerText = "First Name: " + firstName;
       document.getElementById("lastNameDisplay").innerText = "Last Name: " + lastName;
+      document.getElementById("middleNameDisplay").innerText = "Middle Name: " + middleName;
+      document.getElementById("ageDisplay").innerText = "Age: " + age;
+      document.getElementById("sectionDisplay").innerText = "Section: " + section;
       document.getElementById("result").style.display = "block";
 
       }
