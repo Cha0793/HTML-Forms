@@ -2,6 +2,7 @@
 <html>
   <body>
     <h2> HTML FORMS </h2>
+    
     <form>
       <label for="fname"> First Name: </label> <br>
       <input type="text" id="fname" name="fname" value=""> <br>
@@ -15,7 +16,29 @@
       <input type="text" id="section" name="section" value=""> <br>
       <input type="button" value="submit" onclick="displayresult()"> <br>
     </form>
-    
+
+    <p> Please Click the Button </p>
+
+      <div id="result" style="display: none;">
+      <h2>Form Submission Results</h2>
+      <p id="firstNameDisplay"></p>
+      <p id="middleNameDisplay"></p>
+      <p id="lastNameDisplay"></p>
+      <p id="ageDisplay"></p>
+      <p id="sectionDisplay"></p>
+  </div>
+
+      <script>
+      function displayResult () {
+          const firstName = document.getElementById('fname').value;
+          const lastName = document.getElementById('lname').value;
+
+      document.getElementById("firstNameDisplay").innerText = "First Name: " + firstName;
+      document.getElementById("lastNameDisplay").innerText = "Last Name: " + lastName;
+      document.getElementById("result").style.display = "block";
+
+      }
+  </script>
 
 
 
